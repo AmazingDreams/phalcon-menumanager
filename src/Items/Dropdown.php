@@ -13,10 +13,17 @@ class Dropdown extends Base {
 		$this->children = $children;
 	}
 
+	public function addChild(Base $child)
+	{
+		$this->children[] = $child;
+	}
+
 	public function render()
 	{
 		ob_start();
 
+		echo '<li>';
+		echo '<a href="#" class="dropdown-toggle" data-toggle="dropdown">'.$this->uiString.'</a>';
 		echo '<ul class="dropdown-menu" role="menu">';
 
 		foreach($this->children as $child)
@@ -25,7 +32,9 @@ class Dropdown extends Base {
 				->render();
 
 		echo '</ul>';
+		echo '</li>';
 
 		return ob_get_clean();
 	}
+
 }

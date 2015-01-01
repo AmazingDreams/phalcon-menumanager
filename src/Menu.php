@@ -10,7 +10,7 @@ abstract class Menu implements \Phalcon\DI\InjectionAwareInterface {
 
 	abstract function initialize();
 
-	public function addItem(Item $item)
+	public function addItem(\AD\Menu\Items\Base $item)
 	{
 		$this->items[] = $item;
 	}
