@@ -13,6 +13,11 @@ class Dropdown extends Base {
 		$this->children = $children;
 	}
 
+	public function addChild(Base $child)
+	{
+		$this->children[] = $child;
+	}
+
 	public function render()
 	{
 		ob_start();
