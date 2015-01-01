@@ -23,7 +23,7 @@ class Dropdown extends Base {
 		ob_start();
 
 		echo '<li>';
-		echo '<a href="#" class="dropdown-toggle" data-toggle"dropdown">'.$this->uiString.'</a>';
+		echo '<a href="#" class="dropdown-toggle" data-toggle="dropdown">'.$this->uiString.'</a>';
 		echo '<ul class="dropdown-menu" role="menu">';
 
 		foreach($this->children as $child)
