@@ -20,17 +20,6 @@ class Uri extends Base {
 		echo $this->di->get('tag')
 			->linkTo(array_merge(array($this->uri, $this->uiString), $this->options));
 
-		if( ! empty($this->children))
-		{
-			echo '<ul class="dropdown-menu" role="menu">';
-
-			foreach($this->children as $child)
-				echo $child
-					->setDI($this->di)
-					->render();
-
-			echo '</ul>';
-		}
 
 		echo '</li>';
 
