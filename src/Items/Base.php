@@ -1,6 +1,6 @@
 <?php
 
-namespace AD\Menu\Item;
+namespace AD\Menu\Items;
 
 abstract class Base implements \Phalcon\DI\InjectionAwareInterface {
 
