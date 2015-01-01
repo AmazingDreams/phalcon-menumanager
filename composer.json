@@ -1,0 +1,16 @@
+{
+    "name": "amazingdreams/phalcon-menumanager",
+    "description": "The Phalcon Menumanager is a Phalcon module that helps you generate menus",
+    "authors": [
+        {
+            "name": "Dennis Ruhe",
+            "email": "dennis@amazingsystems.nl"
+        }
+    ],
+    "require": {},
+    "autoload" : {
+        "psr-4" : {
+            "AD\\Menu\\" : "src/"
+        }
+    }
+}
