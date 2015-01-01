@@ -27,7 +27,7 @@ class Manager implements \Phalcon\DI\InjectionAwareInterface {
 		$this->di = $di;
 	}
 
-	public function setMenu($key, \Helpers\Menu\Base $menu)
+	public function setMenu($key, Menu $menu)
 	{
 		$this->menus[$key] = $menu;
 	}
