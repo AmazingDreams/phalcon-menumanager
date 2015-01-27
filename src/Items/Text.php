@@ -8,7 +8,7 @@ class Text extends Base {
 	{
 		ob_start();
 		echo '<li>';
-		echo '<span>'.$this->uiString.'</span>';
+		echo '<p class="navbar-text">'.$this->uiString.'</p>';
 		echo '</li>';
 
 		return ob_get_clean();
