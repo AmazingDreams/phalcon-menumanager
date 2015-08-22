@@ -58,7 +58,7 @@ abstract class Menu implements \Phalcon\DI\InjectionAwareInterface {
 		return ob_get_clean();
 	}
 
-	public function setDI($di)
+	public function setDI(\Phalcon\DiInterface $di)
 	{
 		$this->di = $di;
 	}
