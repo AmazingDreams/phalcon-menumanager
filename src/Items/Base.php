@@ -31,7 +31,7 @@ abstract class Base implements \Phalcon\DI\InjectionAwareInterface {
 		return $this->name;
 	}
 
-	public function setDI($di)
+	public function setDI(\Phalcon\DiInterface $di)
 	{
 		$this->di = $di;
 

@@ -22,7 +22,7 @@ class Manager implements \Phalcon\DI\InjectionAwareInterface {
 		return $menu;
 	}
 
-	public function setDI($di)
+	public function setDI(\Phalcon\DiInterface $di)
 	{
 		$this->di = $di;
 	}
